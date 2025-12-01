@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ahmed Ramadan (RONY) - Front-End Developer Portfolio"
+    />
+    <title>RONY | Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="dark-theme">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+      <div class="nav-container">
+        <div class="nav-logo">
+          <span class="logo-text" data-en="RONY" data-ar="روني">RONY</span>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li>
+            <a href="#home" class="nav-link" data-en="Home" data-ar="الرئيسية"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a href="#about" class="nav-link" data-en="About" data-ar="نبذة"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#skills"
+              class="nav-link"
+              data-en="Skills"
+              data-ar="المهارات"
+              >Skills</a
+            >
+          </li>
+          <li>
+            <a
+              href="#projects"
+              class="nav-link"
+              data-en="Projects"
+              data-ar="المشاريع"
+              >Projects</a
+            >
+          </li>
+          <li>
+            <a
+              href="#contact"
+              class="nav-link"
+              data-en="Contact"
+              data-ar="تواصل"
+              >Contact</a
+            >
+          </li>
+        </ul>
+        <div class="nav-controls">
+          <button
+            class="theme-toggle"
+            id="themeToggle"
+            aria-label="Toggle theme"
+          >
+            <span class="theme-icon">🌙</span>
+          </button>
+          <button
+            class="lang-toggle"
+            id="langToggle"
+            aria-label="Toggle language"
+          >
+            <span class="lang-text" data-en="ع" data-ar="EN">ع</span>
+          </button>
+        </div>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </nav>
+
+    <!-- Landing Section -->
+    <section id="home" class="landing-section">
+      <div class="landing-container">
+        <div class="landing-content">
+          <div class="profile-image-container">
+            <div class="profile-image-wrapper">
+              <img
+                src="me.png"
+                alt="Ahmed Ramadan"
+                class="profile-image"
+                id="profileImage"
+              />
+              <div class="image-glow"></div>
+            </div>
+          </div>
+          <h1 class="landing-name">
+            <span class="name-text" data-en="Ahmed Ramadan" data-ar="أحمد رمضان"
+              >Ahmed Ramadan</span
+            >
+          </h1>
+          <p class="landing-nickname">
+            <span class="nickname-text" data-en="RONY" data-ar="روني"
+              >Rony</span
+            >
+          </p>
+          <p class="landing-title">
+            <span
+              class="title-text"
+              data-en="Front-End Developer"
+              data-ar="مطور واجهات أمامية"
+              >Front-End Developer</span
+            >
+          </p>
+          <div class="landing-buttons">
+            <a href="#contact" class="btn-eyes" id="hireMeBtn">
+              <span class="btn-text" data-en="Hire Me" data-ar="وظفني"
+                >Hire Me</span
+              >
+            </a>
+            <a href="#projects" class="btn-secondary">
+              <span
+                class="btn-text"
+                data-en="View Projects"
+                data-ar="عرض المشاريع"
+                >View Projects</span
+              >
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="scroll-indicator">
+        <div class="scroll-arrow"></div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-text" data-en="About Me" data-ar="نبذة عني"
+            >About Me</span
+          >
+        </h2>
+        <div class="about-content">
+          <div class="about-text fade-in">
+            <p
+              class="about-description"
+              data-en="I'm a passionate Front-End Developer with a love for creating beautiful, interactive, and user-friendly web experiences. I specialize in crafting modern, responsive websites that combine aesthetic design with smooth functionality."
+              data-ar="أنا مطور واجهات أمامية محترف في تصميم مواقع ويب حديثة ومتجاوبة تجمع بين التصميم الجمالي والوظائف السلسة."
+            >
+              I'm a passionate Front-End Developer with a love for creating
+              beautiful, interactive, and user-friendly web experiences. I
+              specialize in crafting modern, responsive websites that combine
+              aesthetic design with smooth functionality.
+            </p>
+            <p
+              class="about-description"
+              data-en="With expertise in HTML, CSS, and JavaScript, I transform ideas into stunning digital realities. Every project is an opportunity to push boundaries and deliver exceptional user experiences."
+              data-ar="مع الخبرة في HTML و CSS و JavaScript، أحول الأفكار إلى واقع رقمي مذهل. كل مشروع هو فرصة لدفع الحدود وتقديم تجارب مستخدم استثنائية."
+            >
+              With expertise in HTML, CSS, and JavaScript, I transform ideas
+              into stunning digital realities. Every project is an opportunity
+              to push boundaries and deliver exceptional user experiences.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-text" data-en="Skills" data-ar="المهارات"
+            >Skills</span
+          >
+        </h2>
+        <div class="skills-grid">
+          <div class="skill-card" data-skill="html">
+            <div class="skill-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M12 18l-8-5V7l8-5 8 5v6l-8 5z" />
+              </svg>
+            </div>
+            <h3 class="skill-name">HTML5</h3>
+            <div class="skill-level">
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="95"></div>
+              </div>
+              <span class="skill-percent">95%</span>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="css">
+            <div class="skill-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-name">CSS3</h3>
+            <div class="skill-level">
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="92"></div>
+              </div>
+              <span class="skill-percent">92%</span>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="javascript">
+            <div class="skill-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+                />
+              </svg>
+            </div>
+            <h3 class="skill-name">JavaScript</h3>
+            <div class="skill-level">
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="88"></div>
+              </div>
+              <span class="skill-percent">88%</span>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="responsive">
+            <div class="skill-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="5" y="2" width="14" height="20" rx="2" />
+                <path d="M12 18h.01" />
+              </svg>
+            </div>
+            <h3
+              class="skill-name"
+              data-en="Responsive Design"
+              data-ar="التصميم المتجاوب"
+            >
+              Responsive Design
+            </h3>
+            <div class="skill-level">
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="90"></div>
+              </div>
+              <span class="skill-percent">90%</span>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="animations">
+            <div class="skill-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <h3 class="skill-name" data-en="Animations" data-ar="الحركات">
+              Animations
+            </h3>
+            <div class="skill-level">
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="85"></div>
+              </div>
+              <span class="skill-percent">85%</span>
+            </div>
+          </div>
+          <div class="skill-card" data-skill="ui">
+            <div class="skill-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <path d="M3 9h18M9 3v18" />
+              </svg>
+            </div>
+            <h3
+              class="skill-name"
+              data-en="UI/UX Design"
+              data-ar="تصميم الواجهات"
+            >
+              UI/UX Design
+            </h3>
+            <div class="skill-level">
+              <div class="skill-bar">
+                <div class="skill-progress" data-progress="82"></div>
+              </div>
+              <span class="skill-percent">82%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-text" data-en="Projects" data-ar="المشاريع"
+            >Projects</span
+          >
+        </h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <p
+                  class="project-description"
+                  data-en="Portfolio Website"
+                  data-ar="بروفايل خاص"
+                >
+                  Portfolio Website
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://ahmvdrony.github.io/AboAdel/"
+                    class="project-link"
+                    data-en="View Project"
+                    data-ar="عرض المشروع"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <img src="1.png" alt="Project 1" />
+            </div>
+            <div class="project-info">
+              <h3
+                class="project-title"
+                data-en="Portfolio Website"
+                data-ar="بروفايل خاص"
+              >
+                Portfolio Website
+              </h3>
+              <p class="project-tech">HTML • CSS • JavaScript</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <p
+                  class="project-description"
+                  data-en="Button Interactions"
+                  data-ar="زر تفاعلي"
+                >
+                  Button Interactions
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://ahmvdrony.github.io/button/"
+                    class="project-link"
+                    data-en="View Project"
+                    data-ar="عرض المشروع"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <img src="2.png" alt="Project 2" />
+            </div>
+            <div class="project-info">
+              <h3
+                class="project-title"
+                data-en="Button Interactions"
+                data-ar="زر تفاعلي"
+              >
+                Button Interactions
+              </h3>
+              <p class="project-tech">HTML • CSS • JavaScript</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <p
+                  class="project-description"
+                  data-en="Cat Selection"
+                  data-ar=" بتحب قطتي؟"
+                >
+                  Cat Selection
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://ahmvdrony.github.io/cat/"
+                    class="project-link"
+                    data-en="View Project"
+                    data-ar="عرض المشروع"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <img src="3.png" alt="Project 3" />
+            </div>
+            <div class="project-info">
+              <h3
+                class="project-title"
+                data-en="Cat Selection"
+                data-ar=" بتحب قطتي؟"
+              >
+                Cat Selection
+              </h3>
+              <p class="project-tech">HTML • CSS</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <p
+                  class="project-description"
+                  data-en="Image Slider"
+                  data-ar="دولاب الصور"
+                >
+                  Image Slider
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://ahmvdrony.github.io/image/"
+                    class="project-link"
+                    data-en="View Project"
+                    data-ar="عرض المشروع"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <img src="4.png" alt="Project 4" />
+            </div>
+            <div class="project-info">
+              <h3
+                class="project-title"
+                data-en="Image Slider"
+                data-ar="دولاب الصور"
+              >
+                Image Slider
+              </h3>
+              <p class="project-tech">HTML • CSS</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <p
+                  class="project-description"
+                  data-en="Glasses Login"
+                  data-ar="تسجيل دخول زجاجي"
+                >
+                  Glasses Login
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://ahmvdrony.github.io/login/"
+                    class="project-link"
+                    data-en="View Project"
+                    data-ar="عرض المشروع"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <img src="5.png" alt="Project 5" />
+            </div>
+            <div class="project-info">
+              <h3
+                class="project-title"
+                data-en="Glasses Login"
+                data-ar="تسجيل دخول زجاجي"
+              >
+                Glasses Login
+              </h3>
+              <p class="project-tech">HTML • CSS</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <p
+                  class="project-description"
+                  data-en="Moon Light"
+                  data-ar="القمر المضيء"
+                >
+                  Moon Light
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://ahmvdrony.github.io/moon/"
+                    class="project-link"
+                    data-en="View Project"
+                    data-ar="عرض المشروع"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <img src="6.png" alt="Project 6" />
+            </div>
+            <div class="project-info">
+              <h3
+                class="project-title"
+                data-en="Moon Light"
+                data-ar="القمر المضيء"
+              >
+                Moon Light
+              </h3>
+              <p class="project-tech">HTML • CSS</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <p
+                  class="project-description"
+                  data-en="Navigation Bar"
+                  data-ar="شريط التنقل"
+                >
+                  Navigation Bar
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://ahmvdrony.github.io/nav/"
+                    class="project-link"
+                    data-en="View Project"
+                    data-ar="عرض المشروع"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <img src="7.png" alt="Project 7" />
+            </div>
+            <div class="project-info">
+              <h3
+                class="project-title"
+                data-en="Navigation Bar"
+                data-ar="شريط التنقل"
+              >
+                Navigation Bar
+              </h3>
+              <p class="project-tech">HTML • CSS</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <p
+                  class="project-description"
+                  data-en="Panda Login"
+                  data-ar="صفحة تسجيل دخول باندا"
+                >
+                  Panda Login
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://ahmvdrony.github.io/panda/"
+                    class="project-link"
+                    data-en="View Project"
+                    data-ar="عرض المشروع"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <img src="8.png" alt="Project 8" />
+            </div>
+            <div class="project-info">
+              <h3
+                class="project-title"
+                data-en="Panda Login"
+                data-ar="تسجيل دخول باندا"
+              >
+                Panda Login
+              </h3>
+              <p class="project-tech">HTML • CSS</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <p
+                  class="project-description"
+                  data-en="Course Front-End"
+                  data-ar="ملخص سريع لتطوير الويب"
+                >
+                  Course Front-End
+                </p>
+                <div class="project-links">
+                  <a
+                    href="https://ahmvdrony.github.io/COURSE/"
+                    class="project-link"
+                    data-en="View Project"
+                    data-ar="عرض المشروع"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <img src="9.png" alt="Project 9" />
+            </div>
+            <div class="project-info">
+              <h3
+                class="project-title"
+                data-en="Course Front-End"
+                data-ar="ملخص سريع لتطوير الويب"
+              >
+                Course Front-End
+              </h3>
+              <p class="project-tech">HTML • CSS • JavaScript</p>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-image">
+              <div class="project-overlay">
+                <p
+                  class="project-description"
+                  data-en="Coming Soon..."
+                  data-ar="قريبا..."
+                >
+                  Coming Soon...
+                </p>
+                <div class="project-links">
+                  <a
+                    href="#"
+                    class="project-link"
+                    data-en="View Project"
+                    data-ar="عرض المشروع"
+                    >View Project</a
+                  >
+                </div>
+              </div>
+              <img src="#" />
+            </div>
+            <div class="project-info">
+              <h3
+                class="project-title"
+                data-en="Coming Soon..."
+                data-ar="قريبا..."
+              >
+                Coming Soon...
+              </h3>
+              <p class="project-tech"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section section">
+      <div class="container">
+        <h2 class="section-title">
+          <span class="title-text" data-en="Get In Touch" data-ar="تواصل معي"
+            >Get In Touch</span
+          >
+        </h2>
+        <div class="contact-content">
+          <p
+            class="contact-description"
+            data-en="Feel free to reach out for collaborations, opportunities, or just to say hello!"
+            data-ar="لا تتردد في التواصل للتعاون أو الفرص أو حتى تقولي عاش عليك!"
+          >
+            Feel free to reach out for collaborations, opportunities, or just to
+            say hello!
+          </p>
+          <div class="contact-buttons">
+            <a
+              href="https://facebook.com/RONYMASRvvv"
+              target="_blank"
+              class="contact-btn facebook"
+              aria-label="Facebook"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                />
+              </svg>
+              <span class="contact-btn-text" data-en="Facebook" data-ar="فيسبوك"
+                >Facebook</span
+              >
+            </a>
+            <a
+              href="https://instagram.com/24h_.__"
+              target="_blank"
+              class="contact-btn instagram"
+              aria-label="Instagram"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z" />
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5" />
+              </svg>
+              <span
+                class="contact-btn-text"
+                data-en="Instagram"
+                data-ar="إنستغرام"
+                >Instagram</span
+              >
+            </a>
+            <a
+              href="https://wa.me/01503773790"
+              target="_blank"
+              class="contact-btn whatsapp"
+              aria-label="WhatsApp"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"
+                />
+              </svg>
+              <span class="contact-btn-text" data-en="WhatsApp" data-ar="واتساب"
+                >WhatsApp</span
+              >
+            </a>
+          </div>
+          <a href="#contact" class="btn-eyes btn-hire-me" id="contactHireBtn">
+            <span class="btn-text" data-en="Hire Me" data-ar="وظفني"
+              >Hire Me</span
+            >
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <p class="footer-text">
+          <span
+            class="footer-text-content"
+            data-en="© 2024 Ahmed Ramadan. All rights reserved."
+            data-ar="© 2024 أحمد رمضان. جميع الحقوق محفوظة."
+            >© 2024 Ahmed Ramadan. All rights reserved.</span
+          >
+        </p>
+      </div>
+    </footer>
+
+    <!-- Animated Background Elements -->
+    <div class="animated-background">
+      <div class="bg-circle bg-circle-1"></div>
+      <div class="bg-circle bg-circle-2"></div>
+      <div class="bg-circle bg-circle-3"></div>
+      <div class="bg-circle bg-circle-4"></div>
+      <div class="bg-circle bg-circle-5"></div>
+      <div class="bg-circle bg-circle-6"></div>
+      <div class="bg-particles"></div>
+      <div class="bg-grid"></div>
+      <div class="bg-glow-effect"></div>
+      <div class="bg-lines"></div>
+      <div class="bg-shapes"></div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
